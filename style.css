@@ -1,0 +1,545 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+/* PAGE */
+.page {
+  margin-top: 90px;
+  padding: 20px;
+}
+
+/* FORM CARD */
+.form-card {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #00d4ff;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+/* PROPOSAL CARD */
+.proposal {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.proposal:hover {
+  transform: translateY(-5px);
+}
+
+/* STATUS */
+.status {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status.Approved {
+  background: #28a745;
+}
+
+.status.Rejected {
+  background: #dc3545;
+}
+
+/* DELETE BUTTON */
+.delete {
+  background: #dc3545;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+.card.green {
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+.card.red {
+  background: linear-gradient(135deg, #dc3545, #ff4b5c);
+}
+
+/* LOGIN PAGE */
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  width: 850px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PASSWORD BOX */
+.password-box {
+  display: flex;
+  align-items: center;
+}
+
+.password-box input {
+  flex: 1;
+}
+
+.password-box span {
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: #f4f4f4;
+  color: black;
+}
+
+body.light .form-card,
+body.light .proposal {
+  background: white;
+  color: black;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+/* LOGIN CARD UPGRADE */
+.form-card {
+  margin-top: 30px;
+  max-width: 450px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* INPUT STYLE */
+input, textarea, select {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* BUTTON GLOW */
+button {
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+  box-shadow: 0 0 15px rgba(0,212,255,0.5);
+}
+
+/* LEFT SIDE TEXT */
+.login-left h1 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.features {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.features p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.login-container {
+  transition: 0.3s;
+}
+
+.login-container:hover {
+  transform: scale(1.02);
+}
+/* PREMIUM BACKGROUND */
+.login-body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTAINER */
+.login-container {
+  display: flex;
+  width: 900px;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* LEFT SIDE */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #00d4ff, #007bff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.features p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* RIGHT SIDE */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM CARD */
+.form-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* PASSWORD BOX */
+.password-box {
+  display: flex;
+  align-items: center;
+}
+
+.password-box input {
+  flex: 1;
+}
+
+.password-box span {
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #00d4ff, #007bff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.switch {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #00d4ff;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* FORCE LOGIN BACKGROUND */
+.login-body {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') 
+  no-repeat center center/cover !important;
+}
+.login-left h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.login-left p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.form-card h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+input::placeholder {
+  color: #ddd;
+}
+
+input, select {
+  color: white;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.remember input {
+  width: auto;
+  accent-color: #00d4ff;
+}
+.form-card {
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.form-card h2 {
+  color: white;
+}
+
+.login-left {
+  color: white;
+}
+
+/* DASHBOARD TITLE */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* SECTION TITLE */
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* SEARCH */
+#search {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* PROPOSAL CARD IMPROVE */
+.proposal {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  border-left: 5px solid #00d4ff;
+}
+
+.proposal:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* STATUS COLORS */
+.status {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.status.Approved {
+  background: #28a745;
+}
+
+.status.Rejected {
+  background: #dc3545;
+}
+/* 🌌 DASHBOARD BACKGROUND */
+body {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')
+  no-repeat center center/cover !important;
+}
+.page {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+.section-title {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #00d4ff;
+}
+
+.proposal input {
+  margin-top: 5px;
+}
+
+.proposal button {
+  margin-top: 5px;
+}
+canvas {
+  max-height: 300px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.task-board {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-col {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task {
+  background: rgba(0,0,0,0.3);
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.notif {
+  position: relative;
+}
+
+#notifBox {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background: black;
+  padding: 10px;
+  display: none;
+}

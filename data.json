@@ -1,0 +1,107 @@
+{
+  "proposals": [
+    {
+      "id": 1777904943541,
+      "title": " mfnmaf",
+      "description": "ffsafdg",
+      "proposer": "Akanksha",
+      "priority": "Low",
+      "deadline": "",
+      "status": "Completed",
+      "feedback": "",
+      "pinned": true,
+      "createdAt": "2026-05-04T14:29:03.541Z",
+      "progress": 100
+    },
+    {
+      "id": 1777906854255,
+      "title": "TravelX",
+      "description": "It is a travel software for trip planning and booking",
+      "proposer": "Lakshya",
+      "priority": "High",
+      "deadline": "",
+      "status": "Completed",
+      "progress": 100,
+      "team": [],
+      "tasks": [],
+      "comments": [],
+      "feedback": "Nice!",
+      "pinned": false,
+      "createdAt": "2026-05-04T15:00:54.255Z",
+      "aiScore": 70,
+      "aiSuggestions": [
+        "Add deadline"
+      ]
+    },
+    {
+      "id": 1777907908139,
+      "title": "Make My trip",
+      "description": "travel website that make booking and planning easier",
+      "proposer": "Lakshya",
+      "priority": "High",
+      "deadline": "",
+      "status": "Completed",
+      "progress": 100,
+      "team": [
+        "Lakshya"
+      ],
+      "tasks": [],
+      "comments": [],
+      "feedback": "Average But Good",
+      "pinned": false,
+      "createdAt": "2026-05-04T15:18:28.139Z",
+      "aiScore": 70,
+      "aiSuggestions": [
+        "Add deadline"
+      ]
+    }
+  ],
+  "logs": [
+    "🆕 User \"Lakshya\" registered",
+    "🆕 User \"Akanksha\" registered",
+    "📥 Proposal \" mfnmaf\" submitted",
+    "🆕 User \"admin\" registered",
+    "✏️ Proposal \" mfnmaf\" updated",
+    "✏️ Proposal \" mfnmaf\" updated",
+    "✏️ Proposal \" mfnmaf\" updated",
+    "📥 Proposal \"TravelX\" submitted",
+    "✏️ Proposal \"TravelX\" updated",
+    "✏️ Proposal \"TravelX\" updated",
+    "✏️ Proposal \"TravelX\" updated",
+    "✏️ Proposal \"TravelX\" updated",
+    "📥 Proposal \"Make My trip\" submitted",
+    "✏️ Proposal \"Make My trip\" updated",
+    "✏️ Proposal \"Make My trip\" updated",
+    "✏️ Proposal \"Make My trip\" updated",
+    "✏️ Proposal \"Make My trip\" updated",
+    "🆕 User \"admins\" registered",
+    "🆕 User \"Admins\" registered"
+  ],
+  "users": [
+    {
+      "username": "Lakshya",
+      "password": "123",
+      "role": "student"
+    },
+    {
+      "username": "Akanksha",
+      "password": "123",
+      "role": "student"
+    },
+    {
+      "username": "admin",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "username": "admins",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "username": "Admins",
+      "password": "1234",
+      "role": "admin"
+    }
+  ]
+}

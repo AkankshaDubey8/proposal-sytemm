@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>🚀 Proposal System</h2>
+  <div>
+    <button type="button" onclick="toggleTheme()">🌙</button>
+    <button type="button" onclick="logout()">Logout</button>
+  </div>
+  <div class="notif">
+  🔔 <span id="notifCount">0</span>
+  <div id="notifBox"></div>
+</div>
+</nav>
+
+<!-- MAIN PAGE -->
+<div class="page">
+
+  <h1 class="dashboard-title">📊 Admin Dashboard</h1>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="card" id="total">📥 0</div>
+    <div class="card green" id="approvedCount">✅ 0</div>
+    <div class="card red" id="rejectedCount">❌ 0</div>
+  </div>
+
+  <h2>📊 Analytics</h2>
+
+<div class="grid">
+  <div class="card">
+    <canvas id="statusChart"></canvas>
+  </div>
+
+  <div class="card">
+    <canvas id="priorityChart"></canvas>
+  </div>
+</div>
+
+  <!-- SEARCH -->
+  <input 
+    type="text" 
+    id="search" 
+    placeholder="🔍 Search proposals..." 
+    oninput="load()"
+  >
+
+  <!-- PENDING -->
+  <h2>Pending Review</h2>
+  <div id="proposals" class="grid"></div>
+
+  <!-- APPROVED -->
+  <h2>Approved</h2>
+  <div id="approved" class="grid"></div>
+
+  <!-- LOGS -->
+  <h2>🧾 Activity Log</h2>
+  <div id="logs" class="grid"></div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<h2>🚧 Development Platform</h2>
+<div id="development" class="grid"></div>
+
+</body>
+</html>

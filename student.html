@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>🎓 Student Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+  <div class="notif">
+  🔔 <span id="notifCount">0</span>
+  <div id="notifBox"></div>
+</div>
+</nav>
+
+<div class="page">
+
+  <!-- WELCOME -->
+  <h1 class="dashboard-title">Welcome 👋</h1>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="card" id="total">📥 0</div>
+    <div class="card green" id="approvedCount">✅ 0</div>
+    <div class="card red" id="rejectedCount">❌ 0</div>
+  </div>
+
+  <!-- SEARCH -->
+  <input type="text" id="search" placeholder="🔍 Search your proposals..." oninput="loadMyProposals()">
+
+  <!-- FORM -->
+  <div class="form-card">
+    <h2>🚀 Submit Proposal</h2>
+
+    <form id="proposalForm">
+      <input id="title" placeholder="Title" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input id="proposer" placeholder="Your Name" required>
+
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <input type="date" id="deadline">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- PROPOSALS -->
+  <h2 class="section-title">📋 My Proposals</h2>
+  <div id="myProposals" class="grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

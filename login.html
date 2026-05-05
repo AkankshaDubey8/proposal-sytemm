@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+  <!-- LEFT SIDE -->
+  <div class="login-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="hero-img">
+    <h1>Proposal System</h1>
+    <p>Turn ideas into reality 🚀</p>
+
+    <div class="features">
+      <p>✔ Submit Proposals</p>
+      <p>✔ Track Status</p>
+      <p>✔ Get Feedback</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="login-right">
+    <div class="form-card">
+
+      <h2>Login</h2>
+
+      <form id="loginForm">
+
+        <input id="username" placeholder="👤 Username" required>
+
+        <div class="password-box">
+          <input type="password" id="password" placeholder="🔒 Password" required>
+          <span onclick="togglePassword()">👁</span>
+        </div>
+
+        <select id="role">
+          <option value="student">🎓 Student</option>
+          <option value="admin">🧑‍💼 Admin</option>
+        </select>
+
+        <label class="remember">
+          <input type="checkbox" id="remember">
+          Remember me
+        </label>
+
+        <button type="submit">Login</button>
+
+      </form>
+
+      <p class="switch">
+        New user? <a href="register.html">Create account</a>
+      </p>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
